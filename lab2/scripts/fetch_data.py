@@ -1,5 +1,5 @@
 """
-Скачивание датасет balance-scale с интернета (UCI / архив).
+Скачивание датасет new-thyroid с интернета (UCI / архив).
 Этап конвейера: получение сырых данных.
 """
 from __future__ import annotations
@@ -7,7 +7,7 @@ from __future__ import annotations
 import urllib.request
 from pathlib import Path
 
-# Прямая ссылка на копию new-thyroid (UCI new-thyroid, 178 строк)
+# Прямая ссылка на копию new-thyroid (UCI new-thyroid, 215 строк)
 new_thyroid_URL = ("https://raw.githubusercontent.com/jbrownlee/Datasets/master/new-thyroid.csv")
 
 ROOT = Path(__file__).resolve().parents[1]
