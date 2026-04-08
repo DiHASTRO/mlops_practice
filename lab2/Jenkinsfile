@@ -1,4 +1,4 @@
-/* Копия конвейера для импорта вручную (Script) или указать как путь к скрипту. См. также lab2/Jenkinsfile */
+/* Declarative Pipeline для задания lab2. В Jenkins: Pipeline from SCM, Script Path = lab2/Jenkinsfile */
 
 pipeline {
     agent any
