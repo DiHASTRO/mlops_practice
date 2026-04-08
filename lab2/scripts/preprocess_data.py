@@ -11,13 +11,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 ROOT = Path(__file__).resolve().parents[1]
-RAW = ROOT / "data" / "raw" / "Wine.csv"
+RAW = ROOT / "data" / "raw" / "new-thyroid.csv"
 PROC = ROOT / "data" / "processed"
 PROC.mkdir(parents=True, exist_ok=True)
-
+column_names = ['T3resin', 'thyroxin', 'triiodothyronine', 'thyroidstimulating', 'TSH_value', 'class']
 
 def main() -> None:
-    df = pd.read_csv(RAW)
+    df = pd.read_csv(RAW, header=None, names=column_names)
     # ожидаем колонки species + числовые признаки
     target_col = "species" if "species" in df.columns else df.columns[-1]
     feature_cols = [c for c in df.columns if c != target_col]
