@@ -1,5 +1,5 @@
 services:
-  streamlit-app:
+  lab3_streamlit-app:
     build: .
     ports:
       - "8501:8501"
