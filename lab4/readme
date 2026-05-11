@@ -1,1 +1,12 @@
 в этом каталоге выполняется 4 задание по версионированию наборов данных
+
+---
+
+Выполненные команды (субъекитвно значимая часть)
+
+```
+dvc init
+
+dvc remote add -d yandex-s3 s3://mlops-dihastro-storage/lab4
+dvc remote modify yandex-s3 endpointurl https://storage.yandexcloud.net
+
